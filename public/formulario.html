@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif; /* Fuente limpia y profesional */
+            background-color: #f0f4f8; /* Fondo suave */
+            color: #333; /* Color de texto oscuro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo del contenedor del formulario */
+        .form-container {
+            background-color: #ffffff; /* Fondo blanco del formulario */
+            padding: 30px 40px;
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            max-width: 400px; /* Ancho máximo del formulario */
+            width: 100%; /* Se ajusta al contenedor */
+        }
+
+        /* Estilos para los títulos */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para las etiquetas del formulario */
+        label {
+            display: block; /* Mostrar cada etiqueta en una nueva línea */
+            margin-bottom: 8px;
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Campos se expanden al ancho completo del contenedor */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc; /* Borde suave */
+            border-radius: 4px; /* Bordes ligeramente redondeados */
+            font-size: 16px;
+        }
+
+        /* Estilo para el área de texto */
+        textarea {
+            resize: vertical; /* Permitir solo ajuste vertical */
+            height: 100px; /* Altura predeterminada */
+        }
+
+        /* Estilos para el botón de enviar */
+        input[type="submit"] {
+            background-color: #007bff; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 15px;
+            border: none; /* Sin borde */
+            border-radius: 4px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+            font-size: 16px;
+            width: 100%; /* Botón se expande al ancho completo del contenedor */
+            transition: background-color 0.3s ease; /* Transición suave en el hover */
+        }
+
+        /* Efecto hover para el botón de enviar */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 400px) {
+            .form-container {
+                padding: 20px; /* Ajuste de padding para pantallas más pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Contacto</h1>
+        <form action="mailto:tamararosa6@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
