@@ -7,7 +7,7 @@
     <title>Vite App</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Texto en movimiento</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlaza a tu archivo CSS -->
+    <link rel="stylesheet" href="styles.css"> 
   </head>
   <body>
     <header>
@@ -19,11 +19,11 @@
 
 
       header {
-        background-color: #333; /* Color de fondo del header */
-        color: white; /* Color del texto del header */
-        padding: 20px; /* Espaciado interno del header */
-        text-align: center; /* Centrar el texto del header */
-        font-size: 24px; /* Tamaño de fuente del texto del header */
+        background-color: #333; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 24px; 
         }
 
 
@@ -105,27 +105,27 @@
         display: inline;
         flex-direction: column;
         color: white;;
-        hite-space: nowrap; /* Impedir que el texto se divida en líneas múltiples */
-        animation: mover 22s linear infinite, typing 10s steps(100, end) infinite; /* Aplicar la animación de movimiento */
-        font-size: 38px; /* Tamaño de fuente */
-        padding: 20px; /* Espaciado interno para mejorar la visibilidad del texto */
+        hite-space: nowrap; 
+        animation: mover 22s linear infinite, typing 10s steps(100, end) infinite; 
+        font-size: 38px; 
+        padding: 20px; 
         box-sizing: content-box;
 
       }
 
 
         .email a {
-            color: inherit; /* El enlace toma el color del texto circundante */
-            text-decoration: underline; /* Eliminar subrayado del enlace */
+            color: inherit; 
+            text-decoration: underline; 
         }
 
 
       @keyframes mover {
   0% {
-    transform: translateX(250%); /* Iniciar fuera de la pantalla a la derecha */
-  }
+    transform: translateX(250%); 
+    }
   100% {
-    transform: translateX(-100%); /* Mover fuera de la pantalla a la izquierda */
+    transform: translateX(-100%); 
   }
 }
     </style>
