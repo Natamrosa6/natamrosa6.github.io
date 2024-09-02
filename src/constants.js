@@ -10,7 +10,7 @@ export const dialogueData = {
 
     bed: `Since you've made it this far, I'll give you a relaxation technique. Before going to sleep: move your toes.`,
 
-    resume: `I leave my CV <a href="public/cv.pdf" target="_blank" rel="noopener noreferrer">here</a> in case you want to know more about my work experience or where I studied.`,
+    resume: `I leave my CV <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">here</a> in case you want to know more about my work experience or where I studied.`,
 
     projects: `At the moment, I'm working on two personal web projects that I'm really excited about  I'm creating a web application for price management, and also, I'm developing a small platform to help entrepreneurs. I hope to be able to share some news with you soon!`,
 
