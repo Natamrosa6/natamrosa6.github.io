@@ -1,4 +1,4 @@
-export const scaleFactor = 4;
+export const scaleFactor = 3.2;
 
 export const dialogueData = {
     pc: `I studied web development (including HTML, CSS, JavaScript, and Python) on this computer, and right now I'm taking a UX/UI design course focused on mobile interfaces. I have experience in both Front-End and Full Stack development, and I've also worked with Hugo for static site generation. Here is my <a href="https://github.com/Natamrosa6" target="_blank" rel="noopener noreferrer">GitHub</a>. I created this portfolio using KaboomJs, Vite, GitHub Pages and <a href="https://github.com/Natamrosa6/2d-portfolio-kaboom/blob/master/.github/workflows/staging.yml" target="_blank" rel="noopener noreferrer">GitHub Action</a>  at this desk, where I also read the newspapers every morning while having my coffee`,

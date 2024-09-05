@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Natalia Tamara Rosa portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Texto en movimiento</title>
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
   </head>
   <body>
     <header>
@@ -40,12 +41,31 @@
         margin: 0;
         padding: 0;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        background-color: #0f0019;
       }
 
       #app {
         width: 100%;
         height: 100%;
-        position: relative;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        top: 0;
+        left: 0;
+      }
+z
+      #game {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
       }
 
       #textbox {
@@ -103,8 +123,8 @@
         align-self: center;
         display: inline;
         flex-direction: column;
-        color: white;;
-        hite-space: nowrap; 
+        color: white;
+        white-space: nowrap; 
         animation: mover 22s linear infinite, typing 10s steps(100, end) infinite; 
         font-size: 38px; 
         padding: 20px; 
@@ -148,7 +168,8 @@
           </div>
         </div>
       </div>
-      <canvas id="game"></canvas>
+      <canvas id="game" width="50" height="50">
+      </canvas>
     </div>
     <script type="module" src="src/main.js"></script>
   </body>
